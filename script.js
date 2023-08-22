@@ -19,6 +19,7 @@ async function renderData() {
     console.log(stations)
 
     const backgroundColors = temperatures.map(temperatures => temperatures <20 ? rgbaOrangeColor : rgbaRedColor)
+    const borderColors = temperatures.map(temperatures => temperatures <20 ? rgbOrangeColor : rgbRedColor)
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
@@ -29,7 +30,8 @@ async function renderData() {
                 label: 'City weather',
                 data: temperatures,
                 borderWidth: 1,
-                backgroundColor: backgroundColors
+                backgroundColor: backgroundColors,
+                borderColor: borderColors
             }]
         },
         options: {
