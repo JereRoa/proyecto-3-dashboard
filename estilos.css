@@ -54,14 +54,45 @@ nav a:hover {
     justify-content: center;
 }
 
-.color-span{
-    color: red;
+h3{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px; 
 }
 
 canvas {
     max-width: 100%;
 }
 
+.color-1{
+    color: rgb(255, 99, 132);
+}
+
+.color-2{
+    color: rgb(255, 159, 64);
+}
+
+.color-3 {
+    color: rgb(54, 162, 235)
+}
+
+#reloadButton {
+    background-color:#DE25F5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Estilos cuando se pasa el cursor sobre el botón */
+  #reloadButton:hover {
+    background-color:#a65cd8;
+  }
 
 @media (min-width: 720px) {
 

@@ -12,6 +12,8 @@ const rgbOrangeColor = 'rgb(255, 159, 64)'
 const rgbaBlueColor = 'rgba(54, 162, 235, 0.2)'
 const rgbBlueColor = 'rgb(54, 162, 235)'
 
+
+
 async function renderData() {
     const weathers = await fetchApi('https://api.gael.cloud/general/public/clima')
 
@@ -39,8 +41,7 @@ async function renderData() {
           return rgbRedColor; // Color rojo para temperaturas iguales o mayores a 20
         }
       });
-      
-
+            
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
@@ -65,3 +66,11 @@ async function renderData() {
     });
 }
 renderData()
+
+let reloadButton = document.getElementById('reloadButton');
+
+// Agrega un event listener al botón
+reloadButton.addEventListener('click', function() {
+  // Recarga la página
+  location.reload();
+});
