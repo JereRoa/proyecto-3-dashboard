@@ -45,3 +45,33 @@ nav a:hover {
     text-decoration: underline;
     color: #DE25F5;
 }
+
+.title-1 {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.color-span{
+    color: red;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+
+@media (min-width: 720px) {
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+}
