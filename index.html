@@ -30,21 +30,28 @@
         </nav>
     </header>
     <section class="background-img">
-    <div class="container">
-    <h1 class="title-1">Información climatológica de Chile</h1>
-    <h3>En el siguiente gráfico se muestra la información meteorológica dentro del territorio chileno. Las zonas que
-        tienen una temperatura mayor a los 20ºC se muestran en el gráfico con <span class="color-1">color rojo</span>, mientras que las temperaturas
-        que oscilan entre los 5ºC y 19ºC se muestran de <span class="color-2">color naranja</span>. Finalmente, las temperaturas inferiores a las 5ºC
-        se muestran con el <span class="color-3">color azul</span>. Haz clic en el botón inferior para actualizar los datos.</h3>
-        <br>
-        <div class="estilo-boton-container">
-        <button id="reloadButton">¡Actualizar los datos climáticos!</button>
+        <div class="container">
+            <h1 class="title-1">Información climatológica de Chile</h1>
+            <h3>En el siguiente gráfico se muestra la información meteorológica dentro del territorio chileno. Las zonas
+                que
+                tienen una temperatura mayor a los 20ºC se muestran en el gráfico con <span class="color-1">color
+                    rojo</span>, mientras que las temperaturas
+                que oscilan entre los 5ºC y 19ºC se muestran de <span class="color-2">color naranja</span>. Finalmente,
+                las temperaturas inferiores a las 5ºC
+                se muestran con el <span class="color-3">color azul</span>. Haz clic en el botón inferior para
+                actualizar los datos.</h3>
+            <br>
+            <div class="estilo-boton-container">
+                <button id="reloadButton">¡Actualizar los datos climáticos!</button>
+            </div>
+
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+
+
         </div>
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-</div>
-</section>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js" type="module"></script>
 </body>
