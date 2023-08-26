@@ -58,7 +58,15 @@ async function renderData() {
         },
         options: {
             scales: {
+                x:{
+                  ticks: {
+                    color:'white'
+                  }
+                },
                 y: {
+                  ticks: {
+                    color:'white'
+                  },
                     beginAtZero: true
                 }
             }
